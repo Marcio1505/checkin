@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.4rem;
+  flex-direction: column;
+  background: var(--gray-900);
+  color: var(--text-default);
+  width: 60rem;
+  min-height: 48rem;
+  padding: 2.4rem;
+}
+
+.responsiveTable {
+  overflow-x: auto;
+  border-radius: 0.8rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.responsiveTable table {
+  width: 56rem;
+  font-size: 1.6rem;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.responsiveTable th {
+  background-color: var(--gray-600);
+}
+
+.responsiveTable td {
+  background-color: var(--gray-900);
+}
+
+.responsiveTable th,
+.responsiveTable td {
+  border-bottom: 0.2rem solid var(--gray-700);
+  text-align: left;
+  padding: 1.6rem;
+}
+
+.responsiveTable tbody tr:hover td {
+  background-color: var(--gray-800);
+}
+
+.flightCell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttonTrash {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: var(--primary);
+  color: red;
+  transition: all 0.1s ease-in-out;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.buttonTrash svg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.buttonTrash:hover {
+  filter: brightness(80%);
+}
